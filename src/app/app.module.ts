@@ -6,6 +6,8 @@ import { HeaderComponent} from './header/header.component';
 import { FooterComponent} from './footer/footer.component';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { ClienteComponent } from './clientes/cliente.component';
+import { ClienteService } from './clientes/cliente.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { ClienteComponent } from './clientes/cliente.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
