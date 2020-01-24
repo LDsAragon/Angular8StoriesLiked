@@ -1,1 +1,27 @@
-<p>cliente works!</p>
+<br>
+<div class="card border-danger mb-3">
+    <div class="card-header">Header</div>
+    <div class="card-body text-danger">
+        <h5 class="card-title">Danger card title</h5>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientes">
+                    <td>{{ cliente.id }}</td>
+                    <td>{{ cliente.nombre }}</td>
+                    <td>{{ cliente.apellido }}</td>
+                    <td>{{ cliente.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<br>
