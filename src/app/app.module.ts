@@ -8,7 +8,9 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { ClienteComponent } from './clientes/cliente.component';
 import { ClienteService } from './clientes/cliente.service';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { FormComponent } from './clientes/form.component'
+import { FormsModule } from '@angular/forms' ; 
 
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
@@ -25,11 +27,13 @@ export const appRouting = RouterModule.forRoot(routes);
     HeaderComponent,
     FooterComponent,
     DirectivaComponent,
-    ClienteComponent
+    ClienteComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [ClienteService],
