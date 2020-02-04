@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: 'directiva', component: DirectivaComponent },
   { path: 'clientes', component: ClienteComponent },
+  { path: 'clientes/form', component: FormComponent }
 ];
 
 export const appRouting = RouterModule.forRoot(routes);
